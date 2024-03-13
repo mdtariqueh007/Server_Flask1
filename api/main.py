@@ -32,7 +32,7 @@ for name in classNames:
     Dict[name] = ind
     ind = ind + 1
 
-engine = pyttsx3.init()
+
 
 prediction_result = None
 
