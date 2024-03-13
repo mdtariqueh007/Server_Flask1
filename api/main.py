@@ -2,7 +2,7 @@ from flask import Flask, jsonify, render_template
 from ultralytics import YOLO
 import cv2
 import math
-import pyttsx3
+
 
 app = Flask(__name__)
 
@@ -73,4 +73,4 @@ def object_detection():
         return jsonify({'error': str(e)}), 500
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000)
+    app.run()
